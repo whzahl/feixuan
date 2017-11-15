@@ -1,4 +1,14 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+
+<head>
+   
+</head>
+
+<body data-type="generalComponents">
+
+
+    <!doctype html>
 <html>
 
 <head>
@@ -10,21 +20,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/Public/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="assets/css/admin.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/Public/assets/css/admin.css">
+    <link rel="stylesheet" href="/Public/assets/css/app.css">
+    <script src="/Public/assets/js/echarts.min.js"></script>
 </head>
 
-<body data-type="generalComponents">
+<body data-type="index">
 
 
     <header class="am-topbar am-topbar-inverse admin-header">
         <div class="am-topbar-brand">
             <a href="javascript:;" class="tpl-logo">
-                <img src="assets/img/logo.png" alt="">
+                <img src="/Public/assets/img/logo.png" alt="">
             </a>
         </div>
         <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
@@ -64,7 +75,7 @@
                         <li>
                             <a href="#" class="tpl-dropdown-content-message">
                                 <span class="tpl-dropdown-content-photo">
-                      <img src="assets/img/user02.png" alt=""> </span>
+                      <img src="/Public/assets/img/user02.png" alt=""> </span>
                                 <span class="tpl-dropdown-content-subject">
                       <span class="tpl-dropdown-content-from"> 禁言小张 </span>
                                 <span class="tpl-dropdown-content-time">10分钟前 </span>
@@ -73,7 +84,7 @@
                             </a>
                             <a href="#" class="tpl-dropdown-content-message">
                                 <span class="tpl-dropdown-content-photo">
-                      <img src="assets/img/user03.png" alt=""> </span>
+                      <img src="/Public/assets/img/user03.png" alt=""> </span>
                                 <span class="tpl-dropdown-content-subject">
                       <span class="tpl-dropdown-content-from"> Steam </span>
                                 <span class="tpl-dropdown-content-time">18分钟前</span>
@@ -81,6 +92,7 @@
                                 <span class="tpl-dropdown-content-font"> 为了能最准确的传达所描述的问题， 建议你在反馈时附上演示，方便我们理解。 </span>
                             </a>
                         </li>
+
                     </ul>
                 </li>
                 <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
@@ -130,7 +142,7 @@
 
                 <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>
+                        <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="/Public/assets/img/user01.png"></span>
                     </a>
                     <ul class="am-dropdown-content">
                         <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
@@ -141,15 +153,15 @@
                 <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
             </ul>
         </div>
+    </div>
+</div>
     </header>
 
 
 
+       <div class="tpl-page-container tpl-page-header-fixed">
 
 
-
-
-    <div class="tpl-page-container tpl-page-header-fixed">
         <div class="tpl-left-nav tpl-left-nav-hover">
             <div class="tpl-left-nav-title">
                 Amaze UI 列表
@@ -157,7 +169,7 @@
             <div class="tpl-left-nav-list">
                 <ul class="tpl-left-nav-menu">
                     <li class="tpl-left-nav-item">
-                        <a href="index.html" class="nav-link">
+                        <a href="index.html" class="nav-link active">
                             <i class="am-icon-home"></i>
                             <span>首页</span>
                         </a>
@@ -180,7 +192,7 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
-                                <a href="table-font-list.html">
+                                <a href="/Admin/Index/stock.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
@@ -211,18 +223,14 @@
                     </li>
 
                     <li class="tpl-left-nav-item">
-                        <!-- 打开状态 a 标签添加 active 即可   -->
-                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list active">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-wpforms"></i>
                             <span>表单</span>
-                            <!-- 列表打开状态的i标签添加 tpl-left-nav-more-ico-rotate 图表即90°旋转  -->
                             <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
                         </a>
-                        <!-- 打开状态 添加 display:block-->
                         <ul class="tpl-left-nav-sub-menu" style="display: block;">
                             <li>
-                                <!-- 打开状态 a 标签添加 active 即可   -->
-                                <a href="form-amazeui.html" class="active">
+                                <a href="form-amazeui.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>Amaze UI 表单</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
@@ -235,6 +243,7 @@
                             </li>
                         </ul>
                     </li>
+                    
 
                     <li class="tpl-left-nav-item">
                         <a href="login.html" class="nav-link tpl-left-nav-link-list">
@@ -248,22 +257,31 @@
         </div>
 
 
+    <script src="/Public/assets/js/jquery.min.js"></script>
+    <script src="/Public/assets/js/amazeui.min.js"></script>
+    <script src="/Public/assets/js/iscroll.js"></script>
+    <script src="/Public/assets/js/app.js"></script>
+    </body>
+    </html>
+
+
+
 
 
 
         <div class="tpl-content-wrapper">
             <div class="tpl-content-page-title">
-                Amaze UI 表单
+                Amaze UI 文字列表
             </div>
             <ol class="am-breadcrumb">
                 <li><a href="#" class="am-icon-home">首页</a></li>
-                <li><a href="#">表单</a></li>
-                <li class="am-active">Amaze UI 表单</li>
+                <li><a href="#">Amaze UI CSS</a></li>
+                <li class="am-active">文字列表</li>
             </ol>
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 表单
+                        <span class="am-icon-code"></span> 列表
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
@@ -275,68 +293,96 @@
 
 
                 </div>
-                <div class="tpl-block ">
-
-                    <div class="am-g tpl-amazeui-form">
-
-
-                        <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal">
-                                <div class="am-form-group">
-                                    <label for="user-name" class="am-u-sm-3 am-form-label">姓名 / Name</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="text" id="user-name" placeholder="姓名 / Name">
-                                        <small>输入你的名字，让我们记住你。</small>
-                                    </div>
+                <div class="tpl-block">
+                    <div class="am-g">
+                        <div class="am-u-sm-12 am-u-md-6">
+                            <div class="am-btn-toolbar">
+                                <div class="am-btn-group am-btn-group-xs">
+                                    <a href="add_stock" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</a>
+                                   
                                 </div>
-
-                                <div class="am-form-group">
-                                    <label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="email" id="user-email" placeholder="输入你的电子邮件 / Email">
-                                        <small>邮箱你懂得...</small>
-                                    </div>
-                                </div>
-
-                                <div class="am-form-group">
-                                    <label for="user-phone" class="am-u-sm-3 am-form-label">电话 / Telephone</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="tel" id="user-phone" placeholder="输入你的电话号码 / Telephone">
-                                    </div>
-                                </div>
-
-                                <div class="am-form-group">
-                                    <label for="user-QQ" class="am-u-sm-3 am-form-label">QQ</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="number" pattern="[0-9]*" id="user-QQ" placeholder="输入你的QQ号码">
-                                    </div>
-                                </div>
-
-                                <div class="am-form-group">
-                                    <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Twitter</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="text" id="user-weibo" placeholder="输入你的微博 / Twitter">
-                                    </div>
-                                </div>
-
-                                <div class="am-form-group">
-                                    <label for="user-intro" class="am-u-sm-3 am-form-label">简介 / Intro</label>
-                                    <div class="am-u-sm-9">
-                                        <textarea class="" rows="5" id="user-intro" placeholder="输入个人简介"></textarea>
-                                        <small>250字以内写出你的一生...</small>
-                                    </div>
-                                </div>
-
-                                <div class="am-form-group">
-                                    <div class="am-u-sm-9 am-u-sm-push-3">
-                                        <button type="button" class="am-btn am-btn-primary">保存修改</button>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                            <div class="am-form-group">
+                                <select data-am-selected="{btnSize: 'sm'}">
+              <option value="option1">所有类别</option>
+              <option value="option2">IT业界</option>
+              <option value="option3">数码产品</option>
+              <option value="option3">笔记本电脑</option>
+              <option value="option3">平板电脑</option>
+              <option value="option3">只能手机</option>
+              <option value="option3">超极本</option>
+            </select>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                            <div class="am-input-group am-input-group-sm">
+                                <input type="text" class="am-form-field">
+                                <span class="am-input-group-btn">
+            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
+          </span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="am-g">
+                        <div class="am-u-sm-12">
+                            <form class="am-form">
+                                <table class="am-table am-table-striped am-table-hover table-main">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-check"><input type="checkbox" class="tpl-table-fz-check"></th>
+                                            <th class="table-id">ID</th>
+                                            <th class="table-title">商品名称</th>
+                                            <th class="table-type">尺寸</th>
+                                            <th class="table-author am-hide-sm-only">库存</th>
+                                            <th class="table-type">价格</th>
+                                            <th class="table-set">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr>
+                                            <td><input type="checkbox"></td>
+                                            <td><?php echo ($vo["id"]); ?></td>
+                                            <td><?php echo ($vo["goods_name"]); ?></td>
+                                            <td><?php echo ($vo["size"]); ?></td>
+                                            <td class="am-hide-sm-only"><?php echo ($vo["amount"]); ?></td>
+                                            <td class="am-hide-sm-only"><?php echo ($vo["price"]); ?></td>
+                                            <td>
+                                                <div class="am-btn-toolbar">
+                                                    <div class="am-btn-group am-btn-group-xs">
+                                                        <a href="edit_stock?id=<?php echo ($vo["id"]); ?>"><span class="am-icon-pencil-square-o"></span> 修改</a>
+                                                    
+                                                        <a href='del_Stock?id=<?php echo ($vo["id"]); ?>'>
+                                                      <span class="am-icon-pencil-square-o"></span> 删除</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr><?php endforeach; endif; ?>
+                                    </tbody>
+                                </table>
+                                <div class="am-cf">
 
+                                    <div class="am-fr">
+                                        <ul class="am-pagination tpl-pagination">
+                                            <li class="am-disabled"><a href="#">«</a></li>
+                                            <li class="am-active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tpl-alert"></div>
             </div>
 
 
