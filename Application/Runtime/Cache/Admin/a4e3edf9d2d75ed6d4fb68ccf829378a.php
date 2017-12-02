@@ -1,12 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
-
 <head>
-   
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>教师反馈</title>
+	<link rel="stylesheet" href="">
 </head>
-
-<body data-type="index">
-    <!doctype html>
+<body>
+	<!doctype html>
 <html>
 
 <head>
@@ -28,8 +29,6 @@
 </head>
 
 <body data-type="index">
-
-
     <header class="am-topbar am-topbar-inverse admin-header">
         <div class="am-topbar-brand">
             <a href="javascript:;" class="tpl-logo">
@@ -155,7 +154,7 @@
 </div>
     </header>
 
-
+sdjj
 
        <div class="tpl-page-container tpl-page-header-fixed">
 
@@ -167,13 +166,13 @@
             <div class="tpl-left-nav-list">
                 <ul class="tpl-left-nav-menu">
                     <li class="tpl-left-nav-item">
-                        <a href="index.html" class="nav-link active">
+                        <a href="/Admin/index/index.html" class="nav-link active">
                             <i class="am-icon-home"></i>
                             <span>首页</span>
                         </a>
                     </li>
                     <li class="tpl-left-nav-item">
-                        <a href="chart.html" class="nav-link tpl-left-nav-link-list">
+                        <a href="/Admin/index/chart.html" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-bar-chart"></i>
                             <span>数据表</span>
                             <i class="tpl-left-nav-content tpl-badge-danger">
@@ -190,20 +189,20 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
-                                <a href="table-font-list.html">
+                                <a href="/Admin/index/table-font-list.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
-                                <a href="table-images-list.html">
+                                <a href="/Admin/index/table-images-list.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>图片表格</span>
                                     <i class="tpl-left-nav-content tpl-badge-success">
                18
              </i>
 
-                                    <a href="form-news.html">
+                                    <a href="/Admin/index/form-news.html">
                                         <i class="am-icon-angle-right"></i>
                                         <span>消息列表</span>
                                         <i class="tpl-left-nav-content tpl-badge-primary">
@@ -211,7 +210,7 @@
              </i>
 
 
-                                        <a href="form-news-list.html">
+                                        <a href="/Admin/index/form-news-list.html">
                                             <i class="am-icon-angle-right"></i>
                                             <span>文字列表</span>
 
@@ -228,13 +227,13 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu" style="display: block;">
                             <li>
-                                <a href="form-amazeui.html">
+                                <a href="/Admin/index/form-amazeui.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>Amaze UI 表单</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
-                                <a href="form-line.html">
+                                <a href="/Admin/index/form-line.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>线条表单</span>
                                 </a>
@@ -243,7 +242,7 @@
                     </li>
 
                     <li class="tpl-left-nav-item">
-                        <a href="/Admin /index/login.html" class="nav-link tpl-left-nav-link-list">
+                        <a href="/Admin/index/login.html" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-key"></i>
                             <span>登录</span>
 
@@ -260,24 +259,19 @@
     </body>
     </html>
 
-
-
-
-
-
-        <div class="tpl-content-wrapper">
+	<div class="tpl-content-wrapper">
             <div class="tpl-content-page-title">
-                Amaze UI 表单
+               教师反馈
             </div>
             <ol class="am-breadcrumb">
                 <li><a href="#" class="am-icon-home">首页</a></li>
-                <li><a href="#">表单</a></li>
-                <li class="am-active">Amaze UI 表单</li>
+                <li><a href="#">教师反馈</a></li>
+                
             </ol>
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 折线图
+                        <span class="am-icon-code"></span> 列表
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
@@ -295,9 +289,6 @@
                             <div class="am-btn-toolbar">
                                 <div class="am-btn-group am-btn-group-xs">
                                     <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</button>
-                                    <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 保存</button>
-                                    <button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 审核</button>
-                                    <button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>
                                 </div>
                             </div>
                         </div>
@@ -323,50 +314,58 @@
                             </div>
                         </div>
                     </div>
+                    <div class="am-g">
+                        <div class="am-u-sm-12">
+                            <form class="am-form">
+                                <table class="am-table am-table-striped am-table-hover table-main">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-check"><input type="checkbox" class="tpl-table-fz-check"></th>
+                                            <th class="table-id"    style="text-align: center;">ID</th>
+                                            <th class="table-title" style="text-align: center;">老师姓名</th>
+                                            <th class="table-title" style="text-align: center;">校区</th>
+                                            <th class="table-title" style="text-align: center;">日期</th>
+                                            <th class="table-set"    style="padding-left: 80px;">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="data" >
+                                            <td><input type="checkbox"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="am-hide-sm-only"></td>
+                                            <td class="am-hide-sm-only"></td>
+                                            <td>
+                                                <div class="am-btn-toolbar">
+                                                    <div class="am-btn-group am-btn-group-xs">
+                                                        <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><a href="/Admin/Teachers/particulars.html">详情</a></button>
+                                                        <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>修改</button>
+                                                        <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>                                                         
+                                    </tbody>
+                                </table>
+                                <div class="am-cf">
 
+                                    <div class="am-fr">
+                                        <ul class="am-pagination tpl-pagination">
+                                            <li class="am-disabled"><a href="#">«</a></li>
+                                            <li class="am-active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
 
-                    <!--此部分数据请在 js文件夹下中的 app.js 中的 “百度图表A” 处修改数据 插件使用的是 百度echarts-->
-                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-A">
-
-                    </div>
-                    <div class="portlet-title">
-                        <div class="caption font-green bold">
-                            <span class="am-icon-code"></span> 雷达图
+                            </form>
                         </div>
-                    </div>
-                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-B">
 
                     </div>
-
-                    <div class="portlet-title">
-                        <div class="caption font-green bold">
-                            <span class="am-icon-code"></span> 折线柱图
-                        </div>
-                    </div>
-                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-C">
-
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-    </div>
-
-
-    <script src="/Public/assets/js/jquery.min.js"></script>
-    <script src="/Public/assets/js/amazeui.min.js"></script>
-    <script src="/Public/assets/js/app.js"></script>
 </body>
-
 </html>
