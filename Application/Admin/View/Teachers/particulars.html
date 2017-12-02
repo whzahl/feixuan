@@ -29,79 +29,88 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal">
+                            <foreach name="data"  item="data">
+                             <form class="am-form am-form-horizontal" name="data">
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">ID</label>
+                                    <div class="am-u-sm-9">
+                                        <input readonly="readonly" type="text" id="id" value="{$data.id}">
+                                    </div>
+                                </div>
+
                                 <div class="am-form-group">
                                     <label for="user-name" class="am-u-sm-3 am-form-label">老师姓名</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-name">
+                                        <input readonly="readonly" type="text" id="teachername" value="{$data.teachername}">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-email" class="am-u-sm-3 am-form-label">校区</label>
                                     <div class="am-u-sm-9">
-                                        <input type="email" id="user-email" >
+                                        <input readonly="readonly" type="email" id="school" value="{$data.school}" >
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-phone" class="am-u-sm-3 am-form-label">日期</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-phone">
+                                        <input readonly="readonly" type="date" id="date" value="{$data.date}">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-QQ"  class="am-u-sm-3 am-form-label">应到</label>
 									<div class="am-u-sm-9">
-										<input type="text" id="user-QQ" >
+										<input readonly="readonly" type="text" id="should"   value="{$data.should}">
 									</div>
                                 </div>
 
                                <div class="am-form-group">
                                     <label for="user-QQ"  class="am-u-sm-3 am-form-label">实到</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-QQ" >
+                                        <input  readonly="readonly" type="text" id="rightnow"  value="{$data.rightnow}">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-QQ"  class="am-u-sm-3 am-form-label">缺勤</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text"  id="user-QQ" >
+                                        <input readonly="readonly" type="text"  id="absent" value="{$data.absent}" >
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">请假</label>
                                     <div class="am-u-sm-9">
-                                       <input type="text"  id="user-QQ" >
+                                       <input readonly="readonly" type="text"  id="off"  value="{$data.off}">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">试课</label>
                                     <div class="am-u-sm-9">
-                                       <input type="text"  id="user-QQ" >
+                                       <input readonly="readonly" type="text"  id="lesson"  value="{$data.lesson}">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">备注</label>
                                     <div class="am-u-sm-9">
-                                        <textarea class="" rows="5" id="user-intro" ></textarea>
+                                        <textarea readonly="readonly" class="" rows="5" id="remarks" >{$data.remarks}</textarea>
                                     </div>
                                 </div> 
                                 <div class="am-form-group">
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">课后总结</label>
                                     <div class="am-u-sm-9">
-                                        <textarea class="" rows="5" id="user-intro" ></textarea>
+                                        <textarea readonly="readonly" class="" rows="5" id="summary">{$data.summary}</textarea>
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <div class="am-u-sm-9 am-u-sm-push-3">
-                                        <button type="button"><a href="/Admin/Teachers/index">返回</a></button>
+                                        <button type="button" ><a  href="index">返回</a></button>
                                     </div>
                                 </div>
+
                             </form>
                         </div>
                     </div>

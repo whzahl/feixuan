@@ -1,4 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<<<<<<< HEAD:Application/Runtime/Cache/Admin/8f4a09abf7fea696675c8365542b8afd.php
 <html>
 
 <head>
@@ -9,6 +10,8 @@
 
 
     <!doctype html>
+=======
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f:Application/Runtime/Cache/Admin/8f4a09abf7fea696675c8365542b8afd.php
 <html>
 
 <head>

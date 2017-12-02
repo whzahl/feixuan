@@ -252,7 +252,6 @@
                 </ul>
             </div>
         </div>
-x       
 
     <script src="/Public/assets/js/jquery.min.js"></script>
     <script src="/Public/assets/js/amazeui.min.js"></script>

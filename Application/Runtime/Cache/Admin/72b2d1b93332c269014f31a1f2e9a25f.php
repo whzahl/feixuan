@@ -190,6 +190,7 @@ sdjj
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
                                 <a href="/Admin/index/table-font-list.html">
+                                <a href="/Admin/Stock/stock.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
@@ -240,6 +241,7 @@ sdjj
                             </li>
                         </ul>
                     </li>
+                    
 
                     <li class="tpl-left-nav-item">
                         <a href="/Admin/index/login.html" class="nav-link tpl-left-nav-link-list">
@@ -280,79 +282,88 @@ sdjj
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal">
+                            <foreach name="data"  item="data">
+                             <form class="am-form am-form-horizontal" name="data">
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">ID</label>
+                                    <div class="am-u-sm-9">
+                                        <input readonly="readonly" type="text" id="id" value="<?php echo ($data["id"]); ?>">
+                                    </div>
+                                </div>
+
                                 <div class="am-form-group">
                                     <label for="user-name" class="am-u-sm-3 am-form-label">老师姓名</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-name">
+                                        <input readonly="readonly" type="text" id="teachername" value="<?php echo ($data["teachername"]); ?>">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-email" class="am-u-sm-3 am-form-label">校区</label>
                                     <div class="am-u-sm-9">
-                                        <input type="email" id="user-email" >
+                                        <input readonly="readonly" type="email" id="school" value="<?php echo ($data["school"]); ?>" >
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-phone" class="am-u-sm-3 am-form-label">日期</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-phone">
+                                        <input readonly="readonly" type="date" id="date" value="<?php echo ($data["date"]); ?>">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-QQ"  class="am-u-sm-3 am-form-label">应到</label>
 									<div class="am-u-sm-9">
-										<input type="text" id="user-QQ" >
+										<input readonly="readonly" type="text" id="should"   value="<?php echo ($data["should"]); ?>">
 									</div>
                                 </div>
 
                                <div class="am-form-group">
                                     <label for="user-QQ"  class="am-u-sm-3 am-form-label">实到</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-QQ" >
+                                        <input  readonly="readonly" type="text" id="rightnow"  value="<?php echo ($data["rightnow"]); ?>">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-QQ"  class="am-u-sm-3 am-form-label">缺勤</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text"  id="user-QQ" >
+                                        <input readonly="readonly" type="text"  id="absent" value="<?php echo ($data["absent"]); ?>" >
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">请假</label>
                                     <div class="am-u-sm-9">
-                                       <input type="text"  id="user-QQ" >
+                                       <input readonly="readonly" type="text"  id="off"  value="<?php echo ($data["off"]); ?>">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">试课</label>
                                     <div class="am-u-sm-9">
-                                       <input type="text"  id="user-QQ" >
+                                       <input readonly="readonly" type="text"  id="lesson"  value="<?php echo ($data["lesson"]); ?>">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">备注</label>
                                     <div class="am-u-sm-9">
-                                        <textarea class="" rows="5" id="user-intro" ></textarea>
+                                        <textarea readonly="readonly" class="" rows="5" id="remarks" ><?php echo ($data["remarks"]); ?></textarea>
                                     </div>
                                 </div> 
                                 <div class="am-form-group">
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">课后总结</label>
                                     <div class="am-u-sm-9">
-                                        <textarea class="" rows="5" id="user-intro" ></textarea>
+                                        <textarea readonly="readonly" class="" rows="5" id="summary"><?php echo ($data["summary"]); ?></textarea>
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <div class="am-u-sm-9 am-u-sm-push-3">
-                                        <button type="button"><a href="/Admin/Teachers/index">返回</a></button>
+                                        <button type="button" ><a  href="index">返回</a></button>
                                     </div>
                                 </div>
+
                             </form>
                         </div>
                     </div>

@@ -190,6 +190,7 @@ sdjj
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
                                 <a href="/Admin/index/table-font-list.html">
+                                <a href="/Admin/Stock/stock.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
@@ -240,6 +241,7 @@ sdjj
                             </li>
                         </ul>
                     </li>
+                    
 
                     <li class="tpl-left-nav-item">
                         <a href="/Admin/index/login.html" class="nav-link tpl-left-nav-link-list">
@@ -265,8 +267,7 @@ sdjj
             </div>
             <ol class="am-breadcrumb">
                 <li><a href="#" class="am-icon-home">首页</a></li>
-                <li><a href="#">教师反馈</a></li>
-                
+                <li><a href="#">教师反馈</a></li>                
             </ol>
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
@@ -280,18 +281,9 @@ sdjj
                                 <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
                         </div>
                     </div>
-
-
                 </div>
                 <div class="tpl-block">
-                    <div class="am-g">
-                        <div class="am-u-sm-12 am-u-md-6">
-                            <div class="am-btn-toolbar">
-                                <div class="am-btn-group am-btn-group-xs">
-                                    <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="am-g">                        
                         <div class="am-u-sm-12 am-u-md-3">
                             <div class="am-form-group">
                                 <select data-am-selected="{btnSize: 'sm'}">
@@ -320,31 +312,29 @@ sdjj
                                 <table class="am-table am-table-striped am-table-hover table-main">
                                     <thead>
                                         <tr>
-                                            <th class="table-check"><input type="checkbox" class="tpl-table-fz-check"></th>
-                                            <th class="table-id"    style="text-align: center;">ID</th>
-                                            <th class="table-title" style="text-align: center;">老师姓名</th>
-                                            <th class="table-title" style="text-align: center;">校区</th>
-                                            <th class="table-title" style="text-align: center;">日期</th>
-                                            <th class="table-set"    style="padding-left: 80px;">操作</th>
+                                            <th class="table-id"    >ID</th>
+                                            <th class="table-title" >老师姓名</th>
+                                            <th class="table-title" >校区</th>
+                                            <th class="table-title" >日期</th>
+                                            <th class="table-set"   style="padding-left: 40px;">操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="data" >
-                                            <td><input type="checkbox"></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="am-hide-sm-only"></td>
-                                            <td class="am-hide-sm-only"></td>
+                                        <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="data" >
+                                            <td><?php echo ($vo["id"]); ?></td>
+                                            <td><?php echo ($vo["teachername"]); ?></td>
+                                            <td><?php echo ($vo["school"]); ?></td>
+                                            <td><?php echo ($vo["date"]); ?></td>
+
                                             <td>
                                                 <div class="am-btn-toolbar">
                                                     <div class="am-btn-group am-btn-group-xs">
-                                                        <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><a href="/Admin/Teachers/particulars.html">详情</a></button>
-                                                        <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>修改</button>
-                                                        <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                        <a href="particulars?id=<?php echo ($vo["id"]); ?>" class="am-icon-pencil-square-o">详情</a>
+                                                        <a href="del_index?id=<?php echo ($vo["id"]); ?>" class="am-icon-trash-o">删除<a>
                                                     </div>
                                                 </div>
                                             </td>
-                                        </tr>                                                         
+                                        </tr><?php endforeach; endif; ?>                                                         
                                     </tbody>
                                 </table>
                                 <div class="am-cf">

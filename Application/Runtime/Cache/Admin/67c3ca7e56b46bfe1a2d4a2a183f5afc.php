@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<<<<<<< HEAD
    
 </head>
 
@@ -13,11 +14,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>完美飞旋艺术中心</title>
+=======
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
+<<<<<<< HEAD
     <link rel="icon" type="image/png" href="/Public/i/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
@@ -32,6 +39,23 @@
         <div class="am-topbar-brand">
             <a href="javascript:;" class="tpl-logo">
                 <img src="/Public/assets/img/logo.png" alt="">
+=======
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body data-type="generalComponents">
+
+
+    <header class="am-topbar am-topbar-inverse admin-header">
+        <div class="am-topbar-brand">
+            <a href="javascript:;" class="tpl-logo">
+                <img src="assets/img/logo.png" alt="">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
             </a>
         </div>
         <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
@@ -71,7 +95,11 @@
                         <li>
                             <a href="#" class="tpl-dropdown-content-message">
                                 <span class="tpl-dropdown-content-photo">
+<<<<<<< HEAD
                       <img src="/Public/assets/img/user02.png" alt=""> </span>
+=======
+                      <img src="assets/img/user02.png" alt=""> </span>
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                 <span class="tpl-dropdown-content-subject">
                       <span class="tpl-dropdown-content-from"> 禁言小张 </span>
                                 <span class="tpl-dropdown-content-time">10分钟前 </span>
@@ -80,7 +108,11 @@
                             </a>
                             <a href="#" class="tpl-dropdown-content-message">
                                 <span class="tpl-dropdown-content-photo">
+<<<<<<< HEAD
                       <img src="/Public/assets/img/user03.png" alt=""> </span>
+=======
+                      <img src="assets/img/user03.png" alt=""> </span>
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                 <span class="tpl-dropdown-content-subject">
                       <span class="tpl-dropdown-content-from"> Steam </span>
                                 <span class="tpl-dropdown-content-time">18分钟前</span>
@@ -138,7 +170,11 @@
 
                 <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+<<<<<<< HEAD
                         <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="/Public/assets/img/user01.png"></span>
+=======
+                        <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                     </a>
                     <ul class="am-dropdown-content">
                         <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
@@ -149,6 +185,7 @@
                 <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
             </ul>
         </div>
+<<<<<<< HEAD
     </div>
 </div>
     </header>
@@ -158,6 +195,17 @@ sdjj
        <div class="tpl-page-container tpl-page-header-fixed">
 
 
+=======
+    </header>
+
+
+
+
+
+
+
+    <div class="tpl-page-container tpl-page-header-fixed">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
         <div class="tpl-left-nav tpl-left-nav-hover">
             <div class="tpl-left-nav-title">
                 Amaze UI 列表
@@ -165,13 +213,21 @@ sdjj
             <div class="tpl-left-nav-list">
                 <ul class="tpl-left-nav-menu">
                     <li class="tpl-left-nav-item">
+<<<<<<< HEAD
                         <a href="/Admin/index/index.html" class="nav-link active">
+=======
+                        <a href="index.html" class="nav-link">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                             <i class="am-icon-home"></i>
                             <span>首页</span>
                         </a>
                     </li>
                     <li class="tpl-left-nav-item">
+<<<<<<< HEAD
                         <a href="/Admin/index/chart.html" class="nav-link tpl-left-nav-link-list">
+=======
+                        <a href="chart.html" class="nav-link tpl-left-nav-link-list">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                             <i class="am-icon-bar-chart"></i>
                             <span>数据表</span>
                             <i class="tpl-left-nav-content tpl-badge-danger">
@@ -188,20 +244,32 @@ sdjj
                         </a>
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
+<<<<<<< HEAD
                                 <a href="/Admin/index/table-font-list.html">
+=======
+                                <a href="table-font-list.html">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
+<<<<<<< HEAD
                                 <a href="/Admin/index/table-images-list.html">
+=======
+                                <a href="table-images-list.html">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                     <i class="am-icon-angle-right"></i>
                                     <span>图片表格</span>
                                     <i class="tpl-left-nav-content tpl-badge-success">
                18
              </i>
 
+<<<<<<< HEAD
                                     <a href="/Admin/index/form-news.html">
+=======
+                                    <a href="form-news.html">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                         <i class="am-icon-angle-right"></i>
                                         <span>消息列表</span>
                                         <i class="tpl-left-nav-content tpl-badge-primary">
@@ -209,7 +277,11 @@ sdjj
              </i>
 
 
+<<<<<<< HEAD
                                         <a href="/Admin/index/form-news-list.html">
+=======
+                                        <a href="form-news-list.html">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                             <i class="am-icon-angle-right"></i>
                                             <span>文字列表</span>
 
@@ -219,6 +291,7 @@ sdjj
                     </li>
 
                     <li class="tpl-left-nav-item">
+<<<<<<< HEAD
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-wpforms"></i>
                             <span>表单</span>
@@ -227,12 +300,29 @@ sdjj
                         <ul class="tpl-left-nav-sub-menu" style="display: block;">
                             <li>
                                 <a href="/Admin/index/form-amazeui.html">
+=======
+                        <!-- 打开状态 a 标签添加 active 即可   -->
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list active">
+                            <i class="am-icon-wpforms"></i>
+                            <span>表单</span>
+                            <!-- 列表打开状态的i标签添加 tpl-left-nav-more-ico-rotate 图表即90°旋转  -->
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <!-- 打开状态 添加 display:block-->
+                        <ul class="tpl-left-nav-sub-menu" style="display: block;">
+                            <li>
+                                <a href="form-amazeui.html">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                     <i class="am-icon-angle-right"></i>
                                     <span>Amaze UI 表单</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
+<<<<<<< HEAD
                                 <a href="/Admin/index/form-line.html">
+=======
+                                <a href="form-line.html" class="active">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                     <i class="am-icon-angle-right"></i>
                                     <span>线条表单</span>
                                 </a>
@@ -241,7 +331,11 @@ sdjj
                     </li>
 
                     <li class="tpl-left-nav-item">
+<<<<<<< HEAD
                         <a href="/Admin/index/login.html" class="nav-link tpl-left-nav-link-list">
+=======
+                        <a href="login.html" class="nav-link tpl-left-nav-link-list">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                             <i class="am-icon-key"></i>
                             <span>登录</span>
 
@@ -249,6 +343,7 @@ sdjj
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
         </div>    
 
     <script src="/Public/assets/js/jquery.min.js"></script>
@@ -257,6 +352,37 @@ sdjj
     <script src="/Public/assets/js/app.js"></script>
     </body>
     </html>
+=======
+        </div>
+
+
+
+
+        <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                Amaze UI 表单
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">表单</a></li>
+                <li class="am-active">Amaze UI 表单</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 表单
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
 
                 <div class="tpl-block">
 
@@ -302,7 +428,11 @@ sdjj
                                     <div class="am-u-sm-9">
                                         <div class="am-form-group am-form-file">
                                             <div class="tpl-form-file-img">
+<<<<<<< HEAD
                                                 <img src="/Public/assets/img/a5.png" alt="">
+=======
+                                                <img src="assets/img/a5.png" alt="">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                             </div>
                                             <button type="button" class="am-btn am-btn-danger am-btn-sm">
     <i class="am-icon-cloud-upload"></i> 添加封面图片</button>
@@ -369,6 +499,14 @@ sdjj
         </div>
 
     </div>
+<<<<<<< HEAD
+=======
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js"></script>
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
 </body>
 
 </html>

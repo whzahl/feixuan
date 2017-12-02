@@ -188,7 +188,11 @@ sdjj
                         </a>
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
+<<<<<<< HEAD
                                 <a href="/Admin/index/table-font-list.html">
+=======
+                                <a href="/Admin/Index/stock.html">
+>>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
@@ -239,6 +243,7 @@ sdjj
                             </li>
                         </ul>
                     </li>
+                    
 
                     <li class="tpl-left-nav-item">
                         <a href="/Admin/index/login.html" class="nav-link tpl-left-nav-link-list">

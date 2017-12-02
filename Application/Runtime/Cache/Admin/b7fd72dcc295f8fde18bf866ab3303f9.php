@@ -5,6 +5,7 @@
    
 </head>
 
+
 <body data-type="index">
     <!doctype html>
 <html>
@@ -28,8 +29,6 @@
 </head>
 
 <body data-type="index">
-
-
     <header class="am-topbar am-topbar-inverse admin-header">
         <div class="am-topbar-brand">
             <a href="javascript:;" class="tpl-logo">
@@ -191,6 +190,7 @@ sdjj
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
                                 <a href="/Admin/index/table-font-list.html">
+                                <a href="/Admin/Stock/stock.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
@@ -241,6 +241,7 @@ sdjj
                             </li>
                         </ul>
                     </li>
+                    
 
                     <li class="tpl-left-nav-item">
                         <a href="/Admin/index/login.html" class="nav-link tpl-left-nav-link-list">
@@ -259,11 +260,6 @@ sdjj
     <script src="/Public/assets/js/app.js"></script>
     </body>
     </html>
-
-
-
-
-
 
         <div class="tpl-content-wrapper">
             <div class="tpl-content-page-title">
@@ -359,14 +355,14 @@ sdjj
 
 
 
+
+
         </div>
 
     </div>
 
 
-    <script src="/Public/assets/js/jquery.min.js"></script>
-    <script src="/Public/assets/js/amazeui.min.js"></script>
-    <script src="/Public/assets/js/app.js"></script>
+
 </body>
 
 </html>
