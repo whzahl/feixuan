@@ -1,6 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><<<<<<< HEAD:Application/Home/View/Index/index.html
-=======
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 
 <head>
@@ -191,7 +189,7 @@ sdjj
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
                                 <a href="/Admin/index/table-font-list.html">
-                                <a href="/Admin/Index/stock.html">
+                                <a href="/Admin/Stock/stock.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
@@ -238,6 +236,26 @@ sdjj
                                 <a href="/Admin/index/form-line.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>线条表单</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>教师反馈</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" style="display: block;">
+                            <li>
+                                <a href="/Admin/Teachers/add">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>新增</span>                                    
+                                </a>
+
+                                <a href="/Admin/Teachers/index">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>教师反馈</span>
                                 </a>
                             </li>
                         </ul>
@@ -1053,4 +1071,3 @@ sdjj
 </body>
 
 </html>
->>>>>>> 9d52feb6505d58657d14e2a8c9755d69ee4f816f:Application/Admin/View/Index/index.html
