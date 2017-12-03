@@ -55,7 +55,7 @@ class TeachersController extends Controller {
 
     	$res=$m->add($data);
     	if ($res) {
-    		$this->success('新增成功',U('Teachers/add'),5);
+    		$this->success('新增成功',U('Teachers/add'),3);
     	}
     }        	
 }

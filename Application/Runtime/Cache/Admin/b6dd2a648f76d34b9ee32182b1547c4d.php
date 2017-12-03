@@ -154,10 +154,7 @@
     </div>
 </div>
     </header>
-
-sdjj
-
-       <div class="tpl-page-container tpl-page-header-fixed">
+     <div class="tpl-page-container tpl-page-header-fixed">
 
 
         <div class="tpl-left-nav tpl-left-nav-hover">
@@ -202,14 +199,14 @@ sdjj
                                     <span>图片表格</span>
                                     <i class="tpl-left-nav-content tpl-badge-success">
                18
-             </i>
+             </i></a>
 
                                     <a href="/Admin/index/form-news.html">
                                         <i class="am-icon-angle-right"></i>
                                         <span>消息列表</span>
                                         <i class="tpl-left-nav-content tpl-badge-primary">
                5
-             </i>
+             </i></a>
 
 
                                         <a href="/Admin/index/form-news-list.html">
@@ -219,7 +216,7 @@ sdjj
                                         </a>
                             </li>
                         </ul>
-                    </li>
+                    </li>                       
 
                     <li class="tpl-left-nav-item">
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
@@ -242,6 +239,32 @@ sdjj
                             </li>
                         </ul>
                     </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="/Admin/Students/index" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>学生信息</span>                           
+                        </a>
+                        
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>教师反馈</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" style="display: block;">
+                            <li>
+                                <a href="/Admin/Teachers/add">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>新增</span>                                    
+                                </a>
+
+                                <a href="/Admin/Teachers/index">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>教师反馈</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     
 
                     <li class="tpl-left-nav-item">
@@ -251,6 +274,7 @@ sdjj
 
                         </a>
                     </li>
+                </li>
                 </ul>
             </div>
         </div>    

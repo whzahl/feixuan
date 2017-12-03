@@ -241,6 +241,12 @@ sdjj
                         </ul>
                     </li>
                     <li class="tpl-left-nav-item">
+                        <a href="/Admin/Students/index" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>学生信息</span>                           
+                        </a>
+                        
+                    <li class="tpl-left-nav-item">
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-wpforms"></i>
                             <span>教师反馈</span>

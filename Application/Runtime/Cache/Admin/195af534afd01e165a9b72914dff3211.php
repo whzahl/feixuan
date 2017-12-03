@@ -1,12 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>教师反馈详情新增</title>
-    <link rel="stylesheet" href="">
+   
 </head>
-<body>
+
+<body data-type="generalComponents">
+
+
     <!doctype html>
 <html>
 
@@ -285,33 +286,34 @@
     </body>
     </html>
 
-    <div class="tpl-content-wrapper">
+
+
+
+
+
+        <div class="tpl-content-wrapper">
             <div class="tpl-content-page-title">
-                教师反馈详情表
+               新生报名
             </div>
             <ol class="am-breadcrumb">
-                <li><a href="#" class="am-icon-home">首页</a></li>                
-                <li class="am-active">新增</li>
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">学生信息</a></li>
+                <li class="am-active">新生报名</li>
             </ol>
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 新增信息
+                        <span class="am-icon-code"></span> 报名入口
                     </div>
-                </div>
-                <div class="tpl-block">
-                    <div class="am-g">
-                        <div class="am-u-sm-12 am-u-md-6">
-                            <div class="am-btn-toolbar">
-                                <div class="am-btn-group am-btn-group-xs">
-                                    <a href="add_particulars" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</a>
-                                   
-                                </div>
-                            </div>
-                        </div>                       
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
 </body>
 </html>

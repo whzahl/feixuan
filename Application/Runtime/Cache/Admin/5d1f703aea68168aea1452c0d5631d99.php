@@ -1,12 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>教师反馈详情新增</title>
-    <link rel="stylesheet" href="">
+   
 </head>
-<body>
+
+<body data-type="index">
     <!doctype html>
 <html>
 
@@ -284,34 +283,121 @@
     <script src="/Public/assets/js/app.js"></script>
     </body>
     </html>
-
-    <div class="tpl-content-wrapper">
-            <div class="tpl-content-page-title">
-                教师反馈详情表
+<div class="tpl-content-page-title">
+               学生信息
             </div>
             <ol class="am-breadcrumb">
-                <li><a href="#" class="am-icon-home">首页</a></li>                
-                <li class="am-active">新增</li>
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">学生信息</a></li>                
             </ol>
-            <div class="tpl-portlet-components">
+         <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 新增信息
+                        <span class="am-icon-code"></span> 列表
                     </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="tpl-block">
                     <div class="am-g">
                         <div class="am-u-sm-12 am-u-md-6">
                             <div class="am-btn-toolbar">
                                 <div class="am-btn-group am-btn-group-xs">
-                                    <a href="add_particulars" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</a>
+                                    <a href="add_students" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span>新生报名</a>
                                    
                                 </div>
                             </div>
-                        </div>                       
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                            <div class="am-form-group">
+                                <select data-am-selected="{btnSize: 'sm'}">
+              <option value="option1">所有类别</option>
+              <option value="option2">IT业界</option>
+              <option value="option3">数码产品</option>
+              <option value="option3">笔记本电脑</option>
+              <option value="option3">平板电脑</option>
+              <option value="option3">只能手机</option>
+              <option value="option3">超极本</option>
+            </select>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                            <div class="am-input-group am-input-group-sm">
+                                <input type="text" class="am-form-field">
+                                <span class="am-input-group-btn">
+            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
+          </span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-    </div>
+                    <div class="am-g">
+                        <div class="am-u-sm-12">
+                            <form class="am-form">
+                                <table class="am-table am-table-striped am-table-hover table-main">
+                                    <thead>                                        
+                                        <tr>
+                                            <th class="table-id"    >ID</th>
+                                            <th class="table-title" >学生姓名</th>
+                                            <th class="table-title" >校区</th>
+                                            <th class="table-title" >班级</th>
+                                            <th class="table-title" >学制</th>
+                                            <th class="table-title" >状态</th>
+                                            <th class="table-title" >缴费时间</th>
+                                            <th class="table-title" >电话</th>
+                                            <th class="table-set"   style="padding-left: 80px;">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr class="data" >
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="am-btn-toolbar">
+                                                    <div class="am-btn-group am-btn-group-xs">
+                                                        <a href="particulars?id=<?php echo ($vo["id"]); ?>" class="am-icon-pencil-square-o">续费</a>
+                                                        <a href="del_index?id=<?php echo ($vo["id"]); ?>" class="am-icon-pencil-square-o">详情<a>
+                                                        	<a href="del_index?id=<?php echo ($vo["id"]); ?>" class="am-icon-pencil-square-o">修改<a>
+                                                        <a href="del_index?id=<?php echo ($vo["id"]); ?>" class="am-icon-trash-o">删除<a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                                                                           
+                                    </tbody>
+                                </table>
+                                <div class="am-cf">
+
+                                    <div class="am-fr">
+                                        <ul class="am-pagination tpl-pagination">
+                                            <li class="am-disabled"><a href="#">«</a></li>
+                                            <li class="am-active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+
+                            </form>
+                        </div>
+
+                    </div>
 </body>
 </html>

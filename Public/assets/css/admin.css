@@ -325,13 +325,10 @@ ul {
 }
 
 .table-id {
-  width: 40px;
-}
-.table-title{
   width: 50px;
 }
-th.table-set{
- margin-left: 200px !Importent;
+.table-title{
+  width: 100px;
 }
 
 @media only screen and (max-width: 640px) {
